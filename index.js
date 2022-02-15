@@ -14,4 +14,8 @@ let computerChoiceIndex = Math.floor(Math.random() * 3);
 
 let outcome = outcomes[userChoiceIndex][computerChoiceIndex];
 
-console.log(`User Chooses: ${userChoice}.  Computer Chooses: ${choices[computerChoiceIndex]}.  The User ${outcome}.`);
+let resultDiv = document.createElement('div');
+resultDiv.innerText = `User Chooses: ${userChoice}.  
+Computer Chooses: ${choices[computerChoiceIndex]}.  
+The User ${outcome}.`;
+document.querySelector('body').append(resultDiv);
